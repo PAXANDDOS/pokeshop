@@ -1,0 +1,7 @@
+* text=auto
+* eol=lf
+*.css linguist-vendored
+*.js linguist-language=JavaScript
+*.vue linguist-language=Vue
+*.html linguist-generated
+*.md linguist-generated

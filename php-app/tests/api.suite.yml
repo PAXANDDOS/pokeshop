@@ -1,0 +1,16 @@
+actor: ApiTester
+modules:
+  enabled:
+    - \Helper\Api
+    - REST:
+        url: http://localhost:8000/api
+        depends: PhpBrowser
+        part: Json
+    - Db:
+        dsn: "%DB_CONNECTION%:host=%DB_HOST%;dbname=%DB_DATABASE%"
+        user: "%DB_USERNAME%"
+        password: "%DB_PASSWORD%"
+        dump: "tests/_data/dump.sql"
+        populate: true
+        cleanup: true
+        populator: "%MYSQL_PATH% -u $user -h $host $dbname < $dump"

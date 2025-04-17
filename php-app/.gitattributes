@@ -1,0 +1,8 @@
+* text=auto
+* eol=lf
+*.css linguist-language=CSS
+*.php linguist-language=PHP
+*.sql linguist-language=SQL
+*.html linguist-generated
+*.md linguist-generated
+*.example linguist-generated

@@ -1,0 +1,79 @@
+{
+    "name": "paxanddos/pokeshop",
+    "description": "Online shop for a lot of Pokemon stuff!",
+    "keywords": [
+        "pokemon",
+        "shop",
+        "store"
+    ],
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Framework\\": "framework/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {}
+    },
+    "authors": [
+        {
+            "name": "Paul Litovka",
+            "email": "pashalitovka@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "codeception/codeception": "^5.0",
+        "codeception/module-asserts": "^3.0",
+        "codeception/module-db": "^3.0",
+        "codeception/module-phpbrowser": "^3.0",
+        "codeception/module-rest": "^3.0",
+        "vlucas/phpdotenv": "^5.0"
+    },
+    "scripts": {
+        "serve": [
+            "Composer\\Config::disableProcessTimeout",
+            "@php -S 0.0.0.0:8000"
+        ],
+        "build": [
+            "@composer install --no-dev"
+        ],
+        "test": [
+            "@php vendor/bin/codecept run --steps"
+        ],
+        "test-boot": [
+            "@php vendor/bin/codecept bootstrap"
+        ],
+        "test-generate-cest": [
+            "@php vendor/bin/codecept generate:cest"
+        ],
+        "test-generate-cept": [
+            "@php vendor/bin/codecept generate:cept"
+        ],
+        "test-generate-suite": [
+            "@php vendor/bin/codecept generate:suite"
+        ],
+        "test-build": [
+            "@php vendor/bin/codecept build"
+        ]
+    },
+    "scripts-descriptions": {
+        "serve": "Starts the server.",
+        "build": "Creates autoload file. Ignores dev dependencies.",
+        "test": "Runs all tests or of specific type.",
+        "test-boot": "Bootstraps the codeception.",
+        "test-generate-cest": "Generates test of CEST type.",
+        "test-generate-cept": "Generates test of CEPT type.",
+        "test-generate-suite": "Generates suite for codeception.",
+        "test-build": "Builds codeception classes for suites."
+    },
+    "extra": {},
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "RC",
+    "prefer-stable": true
+}

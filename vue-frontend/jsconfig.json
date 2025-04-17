@@ -1,0 +1,15 @@
+{
+	"strict": false,
+	"compilerOptions": {
+		"baseUrl": ".",
+		"module": "commonjs",
+		"target": "es2015",
+		"checkJs": false,
+		"moduleResolution": "Node",
+		"paths": {
+			"@/*": ["src/*"]
+		}
+	},
+	"include": ["src/**/*.vue", "src/**/*.js"],
+	"exclude": ["node_modules"]
+}

@@ -1,0 +1,28 @@
+.welcomeBlockImg {
+    width: 400px;
+    margin-top: 80px;
+    margin-right: 40px;
+}
+.welcomeBlockText {
+    width: fit-content;
+    margin-top: 80px;
+}
+.welcomeBlockText > h2 {
+    font-family: "Rubik", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+}
+.welcomeBlockText > span {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+}
+.welcomeBlockText > a {
+    text-decoration: none;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    padding: 14px;
+    border-radius: 10px;
+    background-color: #d62d4f;
+    color: whitesmoke;
+}

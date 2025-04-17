@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap");
+
+html {
+    overflow-x: hidden;
+    height: auto;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-color: whitesmoke;
+}
+
+.header {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70px;
+}
+.logo {
+    width: 15%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.logo > img {
+    height: 40px;
+}
+.logo > span {
+    margin-left: 10px;
+    font-family: "Rubik", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.4em;
+    color: rgb(15, 14, 26);
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.info {
+    width: 40%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.info > a {
+    text-decoration: none;
+    padding: 23px 30px 23px 30px;
+    font-family: "Rubik", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.25em;
+    color: rgb(118, 118, 118);
+    transition: 0.08s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    transition-property: background-color, color;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+.info a:hover {
+    background-color: whitesmoke;
+    color: #ea3457;
+}
+.search {
+    width: 25%;
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    background-color: white;
+}
+.search > input {
+    position: relative;
+    width: 100%;
+    height: 65%;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: rgb(238, 238, 238);
+    border: none;
+    border-radius: 15px;
+}
+.search > input:focus {
+    border-color: white;
+    box-shadow: 0 0 0 white;
+}
+::-webkit-input-placeholder {
+    color: rgb(163, 163, 163);
+}
+::-moz-input-placeholder {
+    color: rgb(163, 163, 163);
+}
+::-o-input-placeholder {
+    color: rgb(163, 163, 163);
+}
+.user {
+    width: 20%;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+.user > a {
+    text-decoration: none;
+    padding: 23px 30px 23px 30px;
+    font-family: "Rubik", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.25em;
+    color: rgb(118, 118, 118);
+    transition: 0.08s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    transition-property: background-color, color;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor: pointer;
+}
+.user a:hover {
+    background-color: whitesmoke;
+    color: #ea3457;
+}
+
+.breadcrumbs {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: whitesmoke;
+}
+.breadcrumbs a {
+    padding: 0 20px;
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 0.9em;
+    color: rgb(118, 118, 118);
+    text-decoration: none;
+}
+.breadcrumbs a:last-child {
+    color: #ea3457;
+}
+.breadcrumbs span {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    font-size: 0.9em;
+    color: rgb(19, 19, 19);
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    background-color: whitesmoke;
+    padding: 20px;
+    justify-content: flex-start;
+}
+footer a {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 0.8em;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+@media only screen and (max-width: 1024px) {
+    .header {
+        opacity: 0;
+        margin: 0;
+        padding: 0;
+        width: 0;
+        height: 0;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
